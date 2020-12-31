@@ -1,0 +1,26 @@
+{
+  "name": "tubeloader-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fastify": "^3.9.2",
+    "fastify-cors": "^5.1.0",
+    "fastify-static": "^3.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
