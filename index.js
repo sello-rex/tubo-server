@@ -9,7 +9,8 @@ const path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({origin: '*', methods: 'GET'}));
+app.use(cors({origin: ['https://tubo.techupstream.co.za', 'https://tubo-client.netlify.app', 'http://localhost:3002', 'http://localhost:3000'], methods: 'GET'}));
+
 app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
 // Handle 404
