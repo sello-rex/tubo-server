@@ -85,14 +85,14 @@ function convertToMp3(url, videoDetails){
       fs.mkdirSync(MP3_DIRECTORY, {recursive: true});
 
     ffmpeg(stream)
-    .audioBitrate(320)
+    .audioBitrate(128)
     .save(`${MP3_DIRECTORY}${fileName}`)
     .on('progress', p => {
       readline.cursorTo(process.stdout, 0);
       process.stdout.write(`${p.targetSize}kb downloaded`);
     })
     .on('error', (error) =>{
-      fastify.log.error(error);
+      // fastify.log.error(error);
       reject(error.message);
     })
     .on('end', () => {
