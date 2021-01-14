@@ -19,7 +19,7 @@
     "fastify-cors": "^5.1.0",
     "fastify-static": "^3.3.0",
     "fluent-ffmpeg": "^2.1.2",
-    "ytdl-core": "^4.2.1"
+    "ytdl-core": "^4.4.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
